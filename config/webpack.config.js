@@ -10,6 +10,13 @@ const config = () => {
   return {
     mode: env,
     devtool: isDev ? false : 'source-map',
+    devServer: isDev
+      ? {
+        contentBase: path.resolve( __dirname, '../dist' ),
+        compress: true,
+        port: 3000,
+      }
+      : false,
 
     entry: {
       bundle: [ './src/index.js' ],
