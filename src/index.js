@@ -1,8 +1,7 @@
-function component() {
-  const element = document.createElement( 'div' );
+import App from './App';
 
-  element.innerHTML = 'Hello world';
-  return element;
-}
+const app = new App( {
+  target: document.body,
+} );
 
-document.body.appendChild( component() );
+export default app;
