@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config config/webpack.config.js"
+    "start": "NODE_ENV=development webpack-dev-server --config config/webpack.config.js",
+    "build": "NODE_ENV=production webpack --config config/webpack.config.js"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +19,8 @@
     "svelte": "3.12.1",
     "svelte-loader": "2.13.6",
     "webpack": "4.41.2",
-    "webpack-cli": "3.3.9"
+    "webpack-cli": "3.3.9",
+    "webpack-dev-server": "3.8.2"
   },
   "dependencies": {}
 }
