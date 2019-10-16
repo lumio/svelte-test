@@ -5,7 +5,9 @@
 </style>
 
 <script>
-  let name ='world';
+  import Nested from './Nested';
+  let name ='everyone';
 </script>
 
 <h1>Hello {name}!</h1>
+<Nested />
