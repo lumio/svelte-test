@@ -1,6 +1,7 @@
 <style>
   h1 {
-    font: sans-serif;
+    font: 3em sans-serif;
+    font-weight: 600;
   }
 </style>
 

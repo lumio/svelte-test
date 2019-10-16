@@ -16,7 +16,7 @@ const config = () => {
         compress: true,
         port: 3000,
       }
-      : false,
+      : undefined,
 
     entry: {
       bundle: [ './src/index.js' ],
